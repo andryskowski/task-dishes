@@ -5,6 +5,6 @@
 
 demo: https://andryskowski.github.io/task-dishes/
 
-node version: 14.17.4
-npm version: 6.14.14
+node version: 14.17.4;
+npm version: 6.14.14;
 time it took me to perform the task: 5h

@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  background-color: rgb(236, 243, 255);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Lato:wght@400;700&display=swap");
+
+.main-header {
+  background: -webkit-linear-gradient(mediumvioletred, indigo);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  padding: 15px 15px 0;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
+  font-family: "Lato", sans-serif;
+  color: navy;
+  & > * {
+    padding: 15px;
+  }
+  .dish-name {
+    padding-top: 0;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    input,
+    select {
+      max-width: 400px;
+      height: 32px;
+      background-color: rgb(223, 231, 255);
+      border: 1px solid royalblue;
+      border-radius: 8px;
+      color: navy;
+      font-size: 1em;
+    }
+    input:focus,
+    select:focus {
+      border: 1px solid navy;
+      box-shadow: 0 5px 15px #5c77b6dc;
+      outline: 1px solid navy;
+    }
+    input:active,
+    select:active {
+      border: 1px solid navy;
+      box-shadow: 0 5px 15px #5c77b6dc;
+      outline: 1px solid navy;
+    }
+    h5 {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  }
+  .add-option {
+    display: none;
+  }
+  .submit {
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    border: 1px solid royalblue;
+    background-color: inherit;
+    box-shadow: 0 5px 15px #5c77b641;
+    color: royalblue;
+    font-size: 0.8em;
+    cursor: pointer;
+  }
+  .submit:hover {
+    color: white;
+    background-color: royalblue;
+  }
+  .result-container {
+    display: none;
+    height: 32px;
+    padding: 0 0 0 15px;
+    .result-message {
+      font-size: 1em;
+    }
+  }
+}
